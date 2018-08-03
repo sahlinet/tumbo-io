@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Home :: Tumbo.io - Highly flexible Application Runtime Platform. Focus on principal tasks - gain success and reduce effort</title>
+      <!-- Sets initial viewport load and disables zooming  -->
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+      <!-- Ein Service vom Meta-Tag-Generator auf http://www.metaner.de/ -->
+      <meta name="author" content="Philip Sahli">
+      <meta name="publisher" content="sahli.net">
+      <meta name="copyright" content="sahli.net">
+      <meta name="description" content="Tumbo.io - Highly flexible Application Runtime Platform. Focus on principal tasks - gain success and reduce effort">
+      <meta name="keywords" content="development, deployment, platform, cloud, saas, promise, python, docker, sahli">
+      <meta name="audience" content="all">
+      <meta http-equiv="content-language" content="en">
+      <meta name="robots" content="index, follow">
+      <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+      <META HTTP-EQUIV="Language" CONTENT="en">
+
+      <link rel="shortcut icon" href="/static/img/favicon.ico" />
+      <link rel="bookmark" href="/static/img/favicon.ico" />
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Kanit">
+      <!-- site css -->
+        {% if FRONTEND_STATIC_URL %}
+      <link rel="stylesheet" href="{{ FRONTEND_STATIC_URL }}/bower_components/Bootflat/css/site.min.css">
+      <link rel="stylesheet" href="{{ FRONTEND_STATIC_URL }}/css/planet.css">
+       {% else %}
+      <link rel="stylesheet" href="{{ FASTAPP_STATIC_URL }}/bower_components/Bootflat/css/site.min.css">
+      <link rel="stylesheet" href="{{ FASTAPP_STATIC_URL }}/css/planet.css">
+      {% endif %}
+      <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" rel="stylesheet" type="text/css">
+      <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+      <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+      <![endif]-->
+
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.min.css" />
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.ie.min.css" />
+        <![endif]-->
+   </head>
+   <body>
+      <div class="docs-header">
+         <!--nav-->
+         <nav class="navbar navbar-default navbar-custom" role="navigation">
+            <div class="container">
+               <div class="navbar-header">
+                  <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              -->
+                  </button>
+                  <a class="navbar-brand" href="{{ HOME_URL }}">Tumbo</a>
+               </div>
+            </div>
+         </nav>
+         <div class="topic">
+            <div class="container">
+               <h3>Tumbo</h3>
+               <h4>Highly flexible Application Runtime Platform</h4>
+            </div>
+            <div class="topic__infos">
+               <div class="container">Focus on principal tasks - gain success and reduce effort</div>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="row info">
+            <div class="col-md-6">
+               <div>
+                  <p class="lead">Tumbo is a Server Platform for <strong>simplifying</strong> common development and deployment tasks. It conduce to go live quickly with an application - with less deployment- and configuration requirements.</p>
+               </div>
+            </div>
+            <div class="col-md-6">
+               <div>
+                  <p class="lead">Tumbo is Open source and can be <strong>extended by anybody</strong>.
+                  </p>
+                  <p class="lead">The Tumbo Stack is based on Linux, Django and Docker.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-4">
+                     <h3>Resources</h3>
+                     <ul class="list-group">
+                         <li class="list-group-item"><a href="http://sahli.net/page/skyblue-platform">Project on sahli.net</a></li>
+                         <a href="https://github.com/sahlinet/skyblue-planet-lite">
+                             <li class="list-group-item">Code on Github</li>
+                         </a>
+                         <li class="list-group-item"><a href="https://circleci.com/gh/sahlinet/skyblue-planet-lite">CI on CircleCI</a></li>
+                     </ul>
+                 </div>
+             </div>
+         </div>
+         -->
+      <hr class="dashed" />
+      <div class="container big">
+         <div class="row">
+            <div class="col-md-12">
+               <h2 class="center">Features <small>What Tumbo can</small></h2>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-6">
+               <h3>Run Python Code</h3>
+               <p>Write Python code in the browser or on your Dropbox and execute the code as controller from anywhere.</p>
+            </div>
+            <div class="col-md-6">
+               <h3>Asynchronous Execution</h3>
+               <p>Execute Long-running tasks asynchronously and get the results later.</p>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-6">
+               <h3>Static Content</h3>
+               <p>Load static files with dynamic parts from an installed Python module or from a Dropbox directory.</p>
+            </div>
+            <div class="col-md-6">
+               <h3>Transport Projects</h3>
+               <p>Deploy projects to another Tumbo Platform. Integrate Tumbo in other systems and workflows.</p>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-6">
+               <h3>Develop with Tumbo</h3>
+               <p>Install Tumbo as Runtime Environment on your notebook for development.</p>
+            </div>
+            <div class="col-md-6">
+               <h3>Client JS Framework</h3>
+               <p>Use our javascript library for Angular integration.</p>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-6">
+               <h3>Datastore</h3>
+               <p>Simple API for persisting Data in JSON. Access the data in the Console, Staticfiles or Controllers.</p>
+            </div>
+            <div class="col-md-6">
+               <h3>Run Custom Applications</h3>
+               <p>Start any service or application on the worker and use the networking feature.</p>
+            </div>
+         </div>
+      </div>
+      <!--footer-->
+      <!--
+         <hr class="dashed" />
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-12">
+                     <h2 class="center">Testers</h2>
+                 </div>
+             </div>
+             <div class="col-md-4 col-md-offset-2">
+                 <h3>Asynchronous Execution</h3>
+                 Execute long-running tasks asynchronously and get the results later.
+             </div>
+             <div class="row">
+                 <div class="col-md-4">
+                     <form class="form-signin" id="login_form" method="post" action="/login/">
+                         <input type='hidden' name='csrfmiddlewaretoken' value='PnYSEsZBpo7chI9Lwr8M04xg2FDQx4wk' />
+                         <h3 class="form-signin-heading">Sign in</h3>
+                         <label for="inputUsername" class="sr-only">Username</label>
+                         <input type="text" id="inputUsername" name="username" class="form-control" placeholder="Username" required="" autofocus="">
+                         <label for="inputPassword" class="sr-only">Password</label>
+                         <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required="">
+                         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                     </form>
+                 </div>
+             </div>
+         </div>
+         -->
+      <hr class="dashed" />
+      <div class="container big">
+         <div class="row">
+            <div class="col-md-12">
+               <h2 class="center">Versions <small>Compare</small></h2>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-4">
+               <h3>Development <small>Runserver</small></h3>
+               <p>For Core and Tumbo App Development on your Linux Machine:</p>
+               <pre>$ git clone https://github.com/sahlinet/tumbo-server.git && cd tumbo-server
+$ cli/tumbo.py server dev run --autostart
+</pre>
+            </div>
+            <div class="col-md-4">
+               <h3>On Premise <small>Private</small></h3>
+               <p>Running the full stack on your Docker Host</p>
+               <pre>$ git clone https://github.com/sahlinet/tumbo-server.git && cd tumbo-server
+$ cli/tumbo.py server docker run
+</pre>
+	    <p>For running Tumbo on <a href="http://rancher.com/">Rancher</a> Infrastructure see the <a href="https://github.com/sahlinet/tumbo-server/blob/master/docs/deploy_rancher.md">'Run Tumbo on Rancher' Guide</a>.</p>
+            </div>
+            <div class="col-md-4">
+               <h3>Public Cloud <small>SaaS</small></h3>
+               <p>Hosted on tumbo.io - <mark>Coming soon</mark></p>
+            </div>
+         </div>
+      </div>
+      <!--
+      <hr class="dashed" />
+      <div class="container big">
+         <div class="row">
+            <div class="col-md-6">
+               <h2 class="center">Contribute <small>For Core Developers</small></h2>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-3">
+               <h3>Fork the code <small>Runserver</small></h3>
+               <p>Write Python code in the browser or on your Dropbox and execute the code as controller from anywhere.</p>
+            </div>
+            <div class="col-md-3">
+               <h3>On Premise <small>Private</small></h3>
+               <p>Hosted on tumbo.io - <highlight>cooming soon</highlight></p>
+            </div>
+         </div>
+      </div>
+        -->
+      <div class="github-fork-ribbon-wrapper right-bottom">
+              <div class="github-fork-ribbon">
+                  <a href="https://github.com/sahlinet/tumbo-server">Fork me on GitHub</a>
+              </div>
+          </div>
+
+      <div class="site-footer">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-8">
+                  <h3>Contact the Tumbo Team</h3>
+                  <ul>
+                     <li>Tweet us&nbsp;<a href="https://twitter.com/philipsahli" target="_blank">@philipsahli</a>&nbsp;&nbsp;&nbsp;&nbsp;Email us at <span class="connect">tumbo@sahli.net</span></li>
+                     <li>
+                        <a title="Twitter" href="https://twitter.com/philipsahli" target="_blank" rel="external nofollow"><i class="icon" data-icon="&#xe121"></i></a>
+                        <a title="Google+" href="https://plus.google.com/+PhilipSahli" target="_blank" rel="external nofollow"><i class="icon" data-icon="&#xe110"></i></a>
+                        <a title="Github" href="https://github.com/sahlinet" target="_blank" rel="external nofollow"><i class="icon" data-icon="&#xe10e"></i></a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <hr class="dashed" />
+            <div class="row">
+               <div class="col-md-4">
+                  <h3>Feedback</h3>
+                  Your words are important to know which features are needed or not. Please contact me for discussing your thoughts.
+               </div>
+               <div class="col-md-4">
+                  <h3>Future</h3>
+                  More cloud storage service for static content, scalable workers, request throttling, live console view with WebSockets.
+               </div>
+               <div class="col-md-4">
+                  <h3>Bugs and Security Issues</h3>
+                  Please report the bug on the <a href="https://github.com/sahlinet/tumbo-server">Tumbo Server</a> or <a href="https://github.com/sahlinet/fastapp">fastapp</a> project on Github. Report security issues by sending an email to <a href="mailto:tumbo@sahli.net">tumboATsahli.net</a>.
+               </div>
+            </div>
+            <div class="copyright clearfix">
+               <hr class="dashed" />
+               <p><b>Tumbo</b>&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ HOME_URL }}">Start</a></p>
+               <p>&copy; 2015 <a href="http://bit.ly/11gbFZI" target="_blank">sahli.net</a>&nbsp;&bull;&nbsp; Tumbo is <a href="http://en.wikipedia.org/wiki/MIT_License">MIT licensed</a></p>
+            </div>
+         </div>
+      </div>
+      {% if FRONTEND_STATIC_URL %}
+            <script type="text/javascript" src="{{ FRONTEND_STATIC_URL }}/bower_components/Bootflat/js/site.min.js"></script>
+              {% else %}
+            <script type="text/javascript" src="{{ FASTAPP_STATIC_URL }}/bower_components/Bootflat/js/site.min.js"></script>
+      {% endif %}
+
+      {% if DO_GOOGLE_ANALYTICS %}
+      <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-26689283-6', 'auto');
+          ga('send', 'pageview');
+        </script>
+      {% endif %}
+	
+    </body>
+
+</html>

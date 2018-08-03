@@ -1,0 +1,81 @@
+body {
+	background: #34495e;
+	color: #1abc9c;
+}
+.navbar {
+	border-radius: 0;
+	position: fixed;
+	width: 100%;
+	padding: 0 20px;
+		z-index: 10;
+}
+.jumbotron-midnight {
+	background: #34495e;
+	color: #1abc9c;
+}
+.navbar-brand {
+	margin-top: 13px;
+}
+.ourpanel {
+	padding-top: 78px;
+
+}
+.jumbotron {
+	border-radios: 0 !important;
+	padding: 0 !important;
+}
+.showcase-item {
+	height: 320px;
+	padding: 2px;
+}
+.showcase-item .showcase-item-box {
+	background: #7f8c8d;
+	color: #ffffff;
+	padding: 10px;
+	padding-top: 20px;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+.showcase-item-box img {
+	width: 80px;
+	height: auto;
+}
+.full-width {
+	width: 100%;
+}
+
+.bottom-menu {
+	margin-top: 50px;
+}
+
+.text-centered {
+	text-align: center;
+}
+.no-margin {
+	margin: 0;
+}
+.navbar-fixed-bottom {
+	margin-top: 20px;
+}
+#myCarousel {
+	height: 168px;
+}
+input:focus {
+	border-color: #7f8c8d !important;
+}
+input[type="text"], form#interested > textarea {
+	margin-bottom: 20px !important;
+ 	border: 10px #7f8c8d solid;
+ 	color: white;
+}
+.form-control {
+	background-color: #7f8c8d;
+	box-shadow: none;
+}
+.btn {
+	background-color: #1abc9c;
+}
+.btn:hover, .btn:focus {
+ 	background-color: #16a085;
+}
