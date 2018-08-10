@@ -15,8 +15,11 @@ def func(self):
 
     j2("/tmp/default.conf.j2", _out=h)
 
-    # start nginx
-    nginx = sh.Command("nginx")
-    nginx()
+    try:
+        # start nginx
+        nginx = sh.Command("nginx")
+        nginx()
+    except Exception, e:
+        pass
 
     return "started"
