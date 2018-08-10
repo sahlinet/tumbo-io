@@ -1,0 +1,24 @@
+@startuml
+skinparam componentStyle uml2
+package "Client" {
+    [HTTP Client]
+}
+
+component Secrets {
+    [tumboio]
+    [tumbosahlinet]
+}
+
+component Ingress {
+    tumbo.io --> Service : 2
+    tumbo.io <-- [HTTP Client] : 1
+    tumbo.sahli.net <-- [Worker Pod]: 4 : proxy_pass
+    tumbo.sahli.net --> Service : 5
+    tumbo.io ..> [tumboio] : uses
+    tumbo.sahli.net ..> [tumbosahlinet] : uses
+
+}
+
+Service --> [Worker Pod] : 3
+
+@enduml
