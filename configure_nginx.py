@@ -1,7 +1,7 @@
 def func(self):
     # Install nginx
     import os
-    r = os.popen("yum install nginx -y")
+    os.popen("yum install nginx -y")
 
     # get config
     import urllib
