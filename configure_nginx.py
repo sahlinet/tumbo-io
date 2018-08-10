@@ -6,7 +6,7 @@ def func(self):
     # get config
     import urllib
     urllib.urlretrieve ("https://raw.githubusercontent.com/sahlinet/tumbo-io/develop/files/default.conf", "/tmp/default.conf.j2")
-    h = open("/etc/nginx/conf.d/default.conf.j2", "a")
+    h = open("/etc/nginx/conf.d/default.conf", "w")
 
     # render config
     import sh
