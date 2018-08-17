@@ -1,3 +1,4 @@
+{% load compress %}
 <!DOCTYPE html>
 <html>
    <head>
@@ -23,8 +24,10 @@
       <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Kanit">
       <!-- site css -->
         {% if FRONTEND_STATIC_URL %}
+      {% compress css %}
       <link rel="stylesheet" href="{{ FRONTEND_STATIC_URL }}/bower_components/Bootflat/css/site.min.css">
       <link rel="stylesheet" href="{{ FRONTEND_STATIC_URL }}/css/planet.css">
+      {% endcompress %}
        {% else %}
       <link rel="stylesheet" href="{{ FASTAPP_STATIC_URL }}/bower_components/Bootflat/css/site.min.css">
       <link rel="stylesheet" href="{{ FASTAPP_STATIC_URL }}/css/planet.css">
