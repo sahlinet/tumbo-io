@@ -25,7 +25,7 @@
       <!-- site css -->
         {% if FRONTEND_STATIC_URL %}
       {% compress css %}
-      <link rel="stylesheet" href="{{ FRONTEND_STATIC_URL }}/bower_components/Bootflat/css/site.min.css">
+      <link rel="stylesheet" href="{% static 'bower_components/Bootflat/css/site.min.css' %}">
       <link rel="stylesheet" href="{{ FRONTEND_STATIC_URL }}/css/planet.css">
       {% endcompress %}
        {% else %}
