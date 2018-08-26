@@ -19,7 +19,7 @@ def func(self):
         # start nginx
         nginx = sh.Command("nginx")
         nginx()
-    except Exception, e:
+    except Exception:
         pass
 
     return "started"
